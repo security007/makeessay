@@ -44,8 +44,6 @@ protobuf==3.13.0
 pyaes==1.6.1
 pyarmor==6.6.1
 pyasn1==0.4.8
-PyAudio==0.2.11
-PyAutoGUI==0.9.50
 pycparser==2.20
 PyGetWindow==0.0.8
 pyinstaller==4.2
