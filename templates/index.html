@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Essay Maker</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  </head>
+  <body class="bd">
+
+    <div class="mycard">
+      <h1> Essay Maker </h1>
+      <div class="input-group mb-3">
+        <form action="/" method='POST'>
+          <input type="text" name="essay" class="form" placeholder="Essay Keyword" aria-label="Essay Keyword" >
+          <button class="btn btn-primary" type="submit" id="button-addon2">Create Essay</button>
+        </form>
+      </div>
+
+    </div>
+    {% if request.method == 'POST' %}
+      {{result|safe}}
+
+    {% endif %}
+
+  </body>
+</html>
